@@ -1,0 +1,206 @@
+/* START: NAVIGATION BAR */
+
+.nav-bar { /*WHOLE NAV BAR*/
+  background-color: #556b2f;
+  color: white; /*text color*/
+  display: flex; /*flex - items vijne njeri pas tjetrit rresht inline*/
+  align-items: center;
+  justify-content: space-between;/*hapsire mes nj majtas nj djathtas, nqs ë center dalin tgjitha nmes*/
+  padding: 5px 20px; /* padding for better spacing, (vertikal,horizontal) */
+  border-radius: 8px; /* rounded corners */
+}
+
+.image-nav {
+  width: 50px;/*width(madhesi)*/
+  padding: 10px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px; /* Added margin between list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Removed margin for the last list item */
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px; 
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 10px;
+}
+/* END: Navigation Bar */
+
+/**MAIN PAGE*/
+
+h1 {
+  text-align: center;
+  color: #004d00; 
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+h2 {
+  text-align: center;
+  color: #004d00; 
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.text-intro {
+  max-width: 1200px; /* maximum width for wider content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; 
+  line-height: 1.6; 
+}
+.image-nav {
+  margin-left: 0;
+}
+
+
+h5 {
+  color: #556b2f; 
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif; 
+}
+
+
+p {
+  color: #333; 
+  font-family: serif; 
+  font-size: 1.1em;
+}
+
+
+body {
+  font-family: "Arial", sans-serif; 
+  background-color: #f8ebeb; 
+}
+
+/*START: Meal */
+.meals-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  max-width: 1000px; 
+  max-height: 1100px;
+  margin: 0 auto; /* Center the grid within its container */
+}
+.meals-section {
+  padding: 20px 20px;
+}
+.meals {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  max-width: 300px; /* Set a maximum width for the meals card */
+  margin: 0 auto; /* Center the card within its container */
+  text-align: center; 
+}
+.meals:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal-content {
+  padding: 10px 20px;
+}
+.meal-title {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+.meal-attribute {
+  font-size: 14px;
+  gap: 1.6rem;
+}
+
+.meals img {
+  width: 100%; 
+  height: 141px; 
+}
+
+.tag {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+  padding: 0.1rem 0.2rem; /* Adjust the padding to make the tag smaller */
+  font-size: 0.7rem; 
+}
+.meal-icon {
+  height: 5px;
+  width: 5px;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+/* END Meals */
+
+/* START: Footer */
+footer {
+  background-color: rgba(245, 228, 228, 0.3);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  height: 10px;
+}
+/* END: Footer */
+
+/* START: Home Page */
+div.homeDiv {
+  padding-bottom: 70px;
+  padding-left: 40px;
+}
+/* END: Home page */
+
+
+/*about us*/
+.text-about{
+  padding-left:200px;
+  padding-right: 200px;
+}
+
+
+.thankNote{
+  font-weight: bold;
+}
+
+.headersAbt{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
