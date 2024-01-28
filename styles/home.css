@@ -6,14 +6,14 @@
   display: flex; /*flex - items vijne njeri pas tjetrit rresht inline*/
   align-items: center;
   justify-content: space-between;/*hapsire mes nj majtas nj djathtas, nqs ë center dalin tgjitha nmes*/
-  padding: 5px 20px; /* padding for better spacing, (vertikal,horizontal) */
+  padding:5px 20px; /* padding for better spacing, (vertikal,horizontal) */
   border-radius: 8px; /* rounded corners */
 }
 
 .image-nav {
   width: 50px;/*width(madhesi)*/
   padding: 10px;
-  margin-right: 10px;
+  margin-right: px;
 }
 
 nav ul {
@@ -97,7 +97,7 @@ body {
 /*START: Meal */
 .meals-grid {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);/*size of1 fraction unit*/
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
   column-gap: 30px;
@@ -111,14 +111,17 @@ body {
 .meals {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
-  overflow: hidden;
-  transition: all 0.4s;
+  overflow: hidden;/*any content that overflows the card's boundaries will be clipped or hidden.*//*cepat e fotove ikin*/
+  transition: all 0.4s;/*sets a transition effect on all properties, with a duration of 0.4 seconds. 
+  This means that when there is a change in any property of the card, the change will be animated over a 0.4-second duration.*/
+  /*bejne si slide lart me slow otion*/
   max-width: 300px; /* Set a maximum width for the meals card */
   margin: 0 auto; /* Center the card within its container */
   text-align: center; 
 }
 .meals:hover {
-  transform: translateY(-1.2rem);
+  transform: translateY(-1.2rem);/*it moves the element 1.2rem 
+  (1.2 times the size of the root element's font) upward. The negative value indicates an upward movement.*/
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 .meal-content {
@@ -133,7 +136,7 @@ body {
 
 .meal-attributes {
   list-style: none;
-  display: flex;
+  display: flex;/*child elements (items) will be stacked in a column. */
   flex-direction: column;
   gap: 10px;
   padding: 0;
@@ -148,7 +151,7 @@ body {
   height: 141px; 
 }
 
-.tag {
+.tag {/*brenda tagut*/
   display: inline-block;
   text-transform: uppercase;
   color: #333;

@@ -1,0 +1,158 @@
+/* START: NAVIGATION BAR */
+
+.nav-bar {
+  /*WHOLE NAV BAR*/
+  background-color: #556b2f;
+  color: white; /*text color*/
+  display: flex; /*flex - items vijne njeri pas tjetrit rresht inline*/
+  align-items: center;
+  justify-content: space-between; /*hapsire mes nj majtas nj djathtas, nqs ë center dalin tgjitha nmes*/
+  padding: 5px 20px; /* padding for better spacing, (vertikal,horizontal) */
+  border-radius: 8px; /* rounded corners */
+}
+
+.image-nav {
+  width: 50px; /*width(madhesi)*/
+  padding: 10px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px; /* Added margin between list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Removed margin for the last list item */
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 10px;
+}
+/* END: Navigation Bar */
+
+/* START: Footer */
+footer {
+  background-color: rgba(245, 228, 228, 0.3);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+  height: 10px;
+}
+/* END: Footer */
+
+/*START Reservation Log Page*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/background.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.container2 {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 15vh;
+}
+
+h2 {
+  color: antiquewhite;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+#reservationTbl {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reservationTbl th,
+#reservationTbl td {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #556b2f;
+  padding: 12px;
+  text-align: left;
+  background-color: #f4f4f4;
+}
+
+.removeBtn,
+.editBtn {
+  background-color: darkolivegreen;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #6b8e23;
+}

@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reservationLog.css">
-    <title>Reservation Log</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reservationLog.css" />
+    <title>Orders Log</title>
+  </head>
 
-<body>
-    <nav class="nav-bar">  <!--navigation bar-->
-        <div>  <!--division for icon in nav bar-->
-          <img src="/images/hat.png" class="image-nav" />
-        </div>
+  <body>
+    <nav class="nav-bar">
+      <!--navigation bar-->
+      <div>
+        <!--division for icon in nav bar-->
+        <img src="images/hat.png" class="image-nav" />
+      </div>
 
-        <ul>  <!--unordered list for text / hyperlink in nav bar-->
-          <li><a href="index.html">Main Page</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
-          <li><a href="reservationLog.html">Reservation Log</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-        </ul>
-      </nav> 
+      <ul>
+        <!--unordered list for text / hyperlink in nav bar-->
+        <li><a href="index.html">Main Page</a></li>
+        <li><a href="reservations.html">Order Page</a></li>
+        <li><a href="reservationLog.html">Orders Log</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+      </ul>
+    </nav>
 
-
-     <div class="container2">
-        <h2>Restaurant managment: All Reservations</h2> 
-    </div>  
+    <div class="container2">
+      <h2>All Orders</h2>
+    </div>
 
     <table id="reservationTbl">
-        <thead>
-            <tr>
-                <th>Full Name</th>
-                <th>Phone Number</th>
-                <th>Number of Guests</th>
-                <th>Payment Method</th>
-                <th>Action</th>
-            </tr>
-        </thead>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Phone Number</th>
+          <th>Dish Order</th>
+          <th>Payment Method</th>
+          <th>Action</th>
+          <th>Action</th>
+        </tr>
+      </thead>
 
-        <tbody>
-            <!--
+      <tbody>
+        <!--
             <tr>
                 <td>Kora Sulo</td>
                 <td>+355656465654</td>
@@ -58,15 +62,17 @@
                 </td>
             </tr> 
         -->
-
-        </tbody>
+      </tbody>
     </table>
 
     <footer>
-        <span> &copy; <span id="currentYear"></span> SavorCraft Bistro | Contact Us: +355 68 2545 201</span>
-    </footer>    
+      <span>
+        &copy; <span id="currentYear"></span> OrderEase Eats | Contact Us: +355
+        68 2545 201</span
+      >
+    </footer>
 
-    <script src="main.js"></script>
-    <script src="reservationLog.js"></script>
-</body>
+    <script src="script/main.js"></script>
+    <script src="script/reservationLog.js"></script>
+  </body>
 </html>

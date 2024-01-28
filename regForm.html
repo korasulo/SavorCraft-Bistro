@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles/regForm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration</h2>
+      <form onsubmit="return validateRegistrationForm()" id="registrationForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        />
+        <br />
+        <div class="error-message" id="registrationError"></div>
+        <br />
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    <script>
+      function validateRegistrationForm() {
+        var fullName = document.getElementById("fullname").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        var registrationError = document.getElementById("registrationError");
+
+        if (
+          fullName.trim() === "" ||
+          password.trim() === "" ||
+          confirmPassword.trim() === ""
+        ) {
+          registrationError.innerHTML = "Please enter all fields.";
+          return false;
+        }
+
+        if (password !== confirmPassword) {
+          registrationError.innerHTML = "Passwords do not match.";
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
